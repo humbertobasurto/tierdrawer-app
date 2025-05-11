@@ -23,7 +23,7 @@ export default function TierDrawer() {
         "Credit Applied to Future Tier Upgrade",
       ],
       color: "copper",
-      link: "#tier1-signup",
+      link: "https://outlawsolutions.gumroad.com/l/ynramt",
       buttonText: "Explore This Tier",
     },
     {
@@ -43,7 +43,7 @@ export default function TierDrawer() {
         "Monthly Audit & Review",
       ],
       color: "silver",
-      link: "#tier2-signup",
+      link: "https://outlawsolutions.gumroad.com/l/bnqbv",
       buttonText: "Explore This Tier",
     },
     {
@@ -63,7 +63,7 @@ export default function TierDrawer() {
         "Unlock Premium Add-Ons: Funnels, Dashboards, Retainers",
       ],
       color: "gold",
-      link: "#tier3-signup",
+      link: "https://outlawsolutions.gumroad.com/l/xhoxh",
       buttonText: "Explore This Tier",
     },
   ]

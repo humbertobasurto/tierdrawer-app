@@ -23,7 +23,7 @@ export default function TierDrawer() {
         "Credit Applied to Future Tier Upgrade",
       ],
       color: "copper",
-      link: "https://outlawsolutions.gumroad.com/l/ynramt",
+      link: "https://outlawsolutions.gumroad.com/l/theintelbrief",
       buttonText: "Explore This Tier",
     },
     {

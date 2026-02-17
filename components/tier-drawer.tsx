@@ -33,7 +33,7 @@ export default function TierDrawer() {
       shortDescription: "Vertical Mastery & Capture Engine.",
       priceDisplay: "Flexible Deposit",
       isPopular: true,
-      description: `The core engine for TikTok and IG. I show up with elite gear (Osmo 3, GoPro 12, iPhone 15 PM) to record your life and edit the narrative so you look like a category leader.`,
+      description: `The core engine for TikTok and IG. Get elite content with elite gear (Osmo 3, GoPro 12, iPhone 15 PM) to record your life and edit the narrative so you look like a category leader.`,
       bullets: [
         "Everything in Tier 1",
         "4-Hour Professional On-Site Production",
@@ -51,7 +51,7 @@ export default function TierDrawer() {
       image: "/Tier3sq.png",
       shortDescription: "Full-Scale Execution & Legacy.",
       priceDisplay: "Custom Quote / Travel Required",
-      description: `Where creators evolve into elite operators. Full cinematic scale—Horizontal and Vertical coverage. I travel to your location to handle the architecture of your brand's biggest moments.`,
+      description: `Where creators evolve into elite operators. Full cinematic scale—Horizontal and Vertical coverage. ODS travels to your location to handle the architecture of your brand's biggest moments.`,
       bullets: [
         "Everything in Tier 2 (Weaponized)",
         "Horizontal + Vertical Full-Scale Production",

@@ -23,7 +23,7 @@ export default function TierDrawer() {
         "Direct Roadmap to 'Expensive' Status",
       ],
       color: "copper",
-      link: "https://outlawsolutions.gumroad.com/l/theblueprint",
+      link: "https://outlawsolutions.gumroad.com/l/theintelbrief",
       buttonText: "Get Your Free Audit",
     },
     {

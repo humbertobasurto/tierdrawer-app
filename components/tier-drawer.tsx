@@ -59,7 +59,7 @@ export default function TierDrawer() {
         "Full Visual Architecture & Legacy Branding",
       ],
       color: "gold",
-      link: "https://outlawsolutions.gumroad.com/l/thesyndicate",
+      link: "https://outlawsolutions.gumroad.com/l/npvheo",
       buttonText: "Apply For The Syndicate",
     },
   ]

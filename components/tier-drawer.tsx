@@ -15,7 +15,7 @@ export default function TierDrawer() {
       image: "/Tier1sq.png",
       shortDescription: "Visual Audit & Content Roadmap.",
       priceDisplay: "FREE",
-      description: `The entry point. I’ll audit your current feed and identify the 'Visual Leaks' making you look cheap. You get a 1-page roadmap on exactly how to fix your aesthetic.`,
+      description: `The entry point. Get a personalized audit your current feed and find out why youre not seeing sales through your social mmedia. You get a 1-page roadmap on exactly how to fix your aesthetic.`,
       bullets: [
         "Personalized Feed Aesthetic Audit",
         "Algorithm Gap Analysis",

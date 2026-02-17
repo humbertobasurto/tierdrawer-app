@@ -15,7 +15,7 @@ export default function TierDrawer() {
       icon: <Zap className="w-5 h-5 text-orange-400" />,
       shortDescription: "Visual Audit & Content Roadmap.",
       priceDisplay: "FREE",
-      description: "The entry point. I’ll audit your current feed and identify the 'Visual Leaks' making you look cheap. You get a 1-page roadmap on exactly how to fix your aesthetic.",
+      description: "The entry point for scaling your aesthetic. I’ll audit your current feed and identify the 'Visual Leaks' making you look cheap. You get a 1-page roadmap on exactly how to fix your aesthetic.",
       bullets: [
         "Personalized Feed Aesthetic Audit",
         "Algorithm Gap Analysis",
@@ -30,15 +30,15 @@ export default function TierDrawer() {
       id: 2,
       label: "Tier 2 - The Outlaw",
       icon: <Camera className="w-5 h-5 text-gray-300" />,
-      shortDescription: "Short-Form Vertical Content.",
+      shortDescription: "Short-Form Vertical Mastery.",
       priceDisplay: "Most Popular / Flexible Rates",
       isPopular: true,
-      description: "The core engine for TikTok and Instagram. High-impact vertical content optimized for reach and status. Recording, editing, or full production options available.",
+      description: "High-impact vertical videos for TikTok and Instagram. Whether you need just editing, just recording, or full production—this is the path for creators who need to stay sharp.",
       bullets: [
         "Vertical-Only (TikTok, Reels, Shorts)",
-        "Recording, Editing, or Full-Service options",
+        "Recording Only, Editing Only, or Full-Service",
         "High-Retention 'Outlaw' Editing Style",
-        "Fast turnaround for consistent posting",
+        "Rates adjusted to project scale & location",
       ],
       color: "silver",
       link: "https://outlawsolutions.gumroad.com/l/theoutlaw",
@@ -50,11 +50,11 @@ export default function TierDrawer() {
       icon: <Crown className="w-5 h-5 text-yellow-400" />,
       shortDescription: "Elite Production & Visual Legacy.",
       priceDisplay: "Travel Required / Custom Quote",
-      description: "The elite tier for large events, expensive shoots, and long-form storytelling. Includes cinematic horizontal production and high-status vertical clips.",
+      description: "Elite tier for large events and expensive shoots. Combines cinematic horizontal production with high-status vertical clips. Travel and accommodation covered by the client.",
       bullets: [
         "Horizontal + Vertical Production",
+        "Extended Narrative & Long-Form Style Videos",
         "Large Event & High-Budget Shoot Coverage",
-        "On-Location (Travel/Stay Covered by Client)",
         "Full Visual Architecture & Legacy Branding",
       ],
       color: "gold",
@@ -113,7 +113,9 @@ export default function TierDrawer() {
           >
             <CardContent className="px-6 pb-8 space-y-6">
               <div className="h-px bg-gradient-to-r from-transparent via-white/5 to-transparent w-full" />
-              <p className="text-gray-400 text-sm leading-relaxed font-medium">{tier.description}</p>
+              <p className="text-gray-400 text-sm leading-relaxed font-medium">
+                {tier.description}
+              </p>
               <ul className="space-y-3">
                 {tier.bullets.map((point, idx) => (
                   <li key={idx} className="text-sm flex items-start gap-3 text-gray-200">

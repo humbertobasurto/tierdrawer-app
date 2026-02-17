@@ -11,7 +11,7 @@ export default function TierDrawer() {
   const tiers = [
     {
       id: 1,
-      label: "Tier 1 - The Blueprint",
+      label: "Tier 1 - The Intel Brief",
       image: "/Tier1sq.png",
       shortDescription: "Visual Audit & Content Roadmap.",
       priceDisplay: "FREE",
@@ -41,7 +41,7 @@ export default function TierDrawer() {
         "Rates adjusted to project scale & location",
       ],
       color: "silver",
-      link: "https://outlawsolutions.gumroad.com/l/theoutlaw",
+      link: "https://outlawsolutions.gumroad.com/l/crdhith",
       buttonText: "Build Your Short-Form",
     },
     {

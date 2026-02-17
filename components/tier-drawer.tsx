@@ -15,7 +15,7 @@ export default function TierDrawer() {
       icon: <Zap className="w-5 h-5 text-orange-400" />,
       shortDescription: "Visual Audit & Content Roadmap.",
       priceDisplay: "FREE",
-      description: `The entry point. I’ll audit your current feed and identify the 'Visual Leaks' holding your brand back. You get a 1-page roadmap on exactly how to fix your aesthetic. No commitment, just a plan to dominate.`,
+      description: "The entry point. I’ll audit your current feed and identify the 'Visual Leaks' making you look cheap. You get a 1-page roadmap on exactly how to fix your aesthetic.",
       bullets: [
         "Personalized Feed Aesthetic Audit",
         "Algorithm Gap Analysis",
@@ -30,16 +30,15 @@ export default function TierDrawer() {
       id: 2,
       label: "Tier 2 - The Outlaw",
       icon: <Camera className="w-5 h-5 text-gray-300" />,
-      shortDescription: "Short-Form Vertical Mastery.",
+      shortDescription: "Short-Form Vertical Content.",
       priceDisplay: "Most Popular / Flexible Rates",
       isPopular: true,
-      description: `The core engine for TikTok and Instagram. Whether you need just editing, just recording, or full production—this is the 'Most Popular' path. High-impact vertical content optimized for status and reach.`,
+      description: "The core engine for TikTok and Instagram. High-impact vertical content optimized for reach and status. Recording, editing, or full production options available.",
       bullets: [
         "Vertical-Only (TikTok, Reels, Shorts)",
         "Recording, Editing, or Full-Service options",
-        "High-Retention Editing Style",
-        "Fast 'Outlaw' Turnaround",
-        "Rates adjusted based on project & location",
+        "High-Retention 'Outlaw' Editing Style",
+        "Fast turnaround for consistent posting",
       ],
       color: "silver",
       link: "https://outlawsolutions.gumroad.com/l/theoutlaw",
@@ -51,12 +50,11 @@ export default function TierDrawer() {
       icon: <Crown className="w-5 h-5 text-yellow-400" />,
       shortDescription: "Elite Production & Visual Legacy.",
       priceDisplay: "Travel Required / Custom Quote",
-      description: `The elite tier for large events, expensive shoots, and long-form storytelling. Includes full horizontal and vertical coverage. I travel to your location to handle the architecture of your brand's biggest moments.`,
+      description: "The elite tier for large events, expensive shoots, and long-form storytelling. Includes cinematic horizontal production and high-status vertical clips.",
       bullets: [
-        "Full Scale Production (Horizontal + Vertical)",
+        "Horizontal + Vertical Production",
         "Large Event & High-Budget Shoot Coverage",
-        "Extended Narrative & Longer Style Videos",
-        "On-Location (Travel/Stay Included in Quote)",
+        "On-Location (Travel/Stay Covered by Client)",
         "Full Visual Architecture & Legacy Branding",
       ],
       color: "gold",
@@ -80,7 +78,7 @@ export default function TierDrawer() {
       {tiers.map((tier) => (
         <Card
           key={tier.id}
-          className={`bg-gradient-to-br ${colorClasses[tier.color]} border text-white rounded-3xl transition-all duration-300 relative overflow-hidden ${
+          className={`bg-gradient-to-br ${colorClasses[tier.color as keyof typeof colorClasses]} border text-white rounded-3xl transition-all duration-300 relative overflow-hidden ${
             openTier === tier.id ? "ring-2 ring-white/10" : ""
           }`}
         >
@@ -115,9 +113,7 @@ export default function TierDrawer() {
           >
             <CardContent className="px-6 pb-8 space-y-6">
               <div className="h-px bg-gradient-to-r from-transparent via-white/5 to-transparent w-full" />
-              <p className="text-gray-400 text-sm leading-relaxed font-medium">
-                {tier.description}
-              </p>
+              <p className="text-gray-400 text-sm leading-relaxed font-medium">{tier.description}</p>
               <ul className="space-y-3">
                 {tier.bullets.map((point, idx) => (
                   <li key={idx} className="text-sm flex items-start gap-3 text-gray-200">

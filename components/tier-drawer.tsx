@@ -73,3 +73,70 @@ export default function TierDrawer() {
   }
 
   const toggleTier = (id: number) => {
+    setOpenTier(openTier === id ? null : id)
+  }
+
+  return (
+    <div className="space-y-6 w-full max-w-2xl mx-auto">
+      {tiers.map((tier) => (
+        <Card
+          key={tier.id}
+          className={`bg-gradient-to-br ${colorClasses[tier.color]} border text-white rounded-3xl transition-all duration-300 relative overflow-hidden ${
+            openTier === tier.id ? "ring-2 ring-white/10" : ""
+          }`}
+        >
+          {tier.isPopular && (
+            <div className="absolute top-4 right-4 bg-white text-black text-[10px] font-black px-2 py-1 rounded-full flex items-center gap-1 uppercase tracking-widest z-10">
+              <Star className="w-3 h-3 fill-current" /> Most Popular
+            </div>
+          )}
+          
+          <div
+            onClick={() => toggleTier(tier.id)}
+            className="cursor-pointer flex items-center justify-between p-6"
+          >
+            <div className="flex items-center space-x-5">
+              <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
+                {tier.icon}
+              </div>
+              <div>
+                <h3 className="text-xl font-black uppercase tracking-tighter italic">{tier.label}</h3>
+                <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">{tier.priceDisplay}</p>
+              </div>
+            </div>
+            <div className="text-gray-600">
+              {openTier === tier.id ? <ChevronUp className="h-6 w-6" /> : <ChevronDown className="h-6 w-6" />}
+            </div>
+          </div>
+
+          <div
+            className={`overflow-hidden transition-all duration-500 ease-in-out ${
+              openTier === tier.id ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+            }`}
+          >
+            <CardContent className="px-6 pb-8 space-y-6">
+              <div className="h-px bg-gradient-to-r from-transparent via-white/5 to-transparent w-full" />
+              <p className="text-gray-400 text-sm leading-relaxed font-medium">
+                {tier.description}
+              </p>
+              <ul className="space-y-3">
+                {tier.bullets.map((point, idx) => (
+                  <li key={idx} className="text-sm flex items-start gap-3 text-gray-200">
+                    <div className="w-1.5 h-1.5 rounded-full bg-white/30 mt-1.5 flex-shrink-0" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+              <Button
+                asChild
+                className="w-full bg-white text-black hover:bg-gray-200 font-black uppercase italic tracking-tighter py-6 rounded-2xl shadow-xl transition-transform active:scale-95"
+              >
+                <a href={tier.link}>{tier.buttonText}</a>
+              </Button>
+            </CardContent>
+          </div>
+        </Card>
+      ))}
+    </div>
+  )
+}
